@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertViewController" customModule="IDEA_Hospital" customModuleProvider="target">
+            <connections>
+                <outlet property="AlertView" destination="i5M-Pr-FkT" id="i5V-hA-7hm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="AlertView" customModule="IDEA_Hospital" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jb1-4G-M0C">
+                    <rect key="frame" x="12.5" y="283.5" width="350" height="120"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSZ-Op-V1e" customClass="CommonButton" customModule="IDEA_Hospital" customModuleProvider="target">
+                            <rect key="frame" x="55" y="75.5" width="100" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="UYC-ae-yIR"/>
+                                <constraint firstAttribute="height" constant="25" id="Ypq-sY-wBx"/>
+                            </constraints>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="yesBtnTapped:" destination="-1" eventType="touchUpInside" id="kV9-KX-IkP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbB-fA-oSq" customClass="CommonButton" customModule="IDEA_Hospital" customModuleProvider="target">
+                            <rect key="frame" x="195" y="75.5" width="100" height="25"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="noBtnTapped:" destination="-1" eventType="touchUpInside" id="pid-s8-5vd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gb3-4Z-t1n">
+                            <rect key="frame" x="315" y="7" width="35" height="24"/>
+                            <state key="normal" title="Button" image="Cancel"/>
+                            <connections>
+                                <action selector="cancelBtnTapped:" destination="-1" eventType="touchUpInside" id="Kqo-3S-p3N"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9z-YB-NSA">
+                            <rect key="frame" x="0.0" y="17.5" width="350" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PuN-XJ-kAJ">
+                            <rect key="frame" x="122.5" y="-14.5" width="105" height="89"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWA-zU-QMi">
+                            <rect key="frame" x="0.0" y="53.5" width="350" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFy-9q-UdI" customClass="CommonButton" customModule="IDEA_Hospital" customModuleProvider="target">
+                            <rect key="frame" x="125" y="84" width="100" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="bqd-Po-NaA"/>
+                                <constraint firstAttribute="width" constant="100" id="guu-ye-cmu"/>
+                            </constraints>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="confirmBtnTapped:" destination="-1" eventType="touchUpInside" id="AVA-CH-Jwv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Gb3-4Z-t1n" firstAttribute="height" secondItem="Jb1-4G-M0C" secondAttribute="height" multiplier="0.2" id="0Lu-q5-OZL"/>
+                        <constraint firstItem="Gb3-4Z-t1n" firstAttribute="centerY" secondItem="Jb1-4G-M0C" secondAttribute="centerY" multiplier="0.32" id="2yc-lB-Ujr"/>
+                        <constraint firstItem="PuN-XJ-kAJ" firstAttribute="width" secondItem="Jb1-4G-M0C" secondAttribute="width" multiplier="0.3" id="6GW-15-ANE"/>
+                        <constraint firstItem="n9z-YB-NSA" firstAttribute="leading" secondItem="Jb1-4G-M0C" secondAttribute="leading" id="8Qz-Kq-iID"/>
+                        <constraint firstItem="TSZ-Op-V1e" firstAttribute="centerX" secondItem="Jb1-4G-M0C" secondAttribute="centerX" multiplier="0.6" id="A18-fe-klL"/>
+                        <constraint firstAttribute="trailing" secondItem="n9z-YB-NSA" secondAttribute="trailing" id="ATf-wu-aQM"/>
+                        <constraint firstItem="PuN-XJ-kAJ" firstAttribute="centerX" secondItem="Jb1-4G-M0C" secondAttribute="centerX" id="Abb-F6-Woa"/>
+                        <constraint firstItem="bWA-zU-QMi" firstAttribute="top" secondItem="n9z-YB-NSA" secondAttribute="bottom" id="BcT-JG-Fad"/>
+                        <constraint firstItem="gbB-fA-oSq" firstAttribute="width" secondItem="TSZ-Op-V1e" secondAttribute="width" id="GGD-1e-TXT"/>
+                        <constraint firstItem="gbB-fA-oSq" firstAttribute="centerY" secondItem="TSZ-Op-V1e" secondAttribute="centerY" id="RR4-fL-ZgK"/>
+                        <constraint firstItem="TSZ-Op-V1e" firstAttribute="top" secondItem="bWA-zU-QMi" secondAttribute="bottom" constant="1.5" id="S6a-Vw-FKY"/>
+                        <constraint firstAttribute="bottom" secondItem="dFy-9q-UdI" secondAttribute="bottom" constant="11" id="VSD-4H-Op6"/>
+                        <constraint firstAttribute="trailing" secondItem="bWA-zU-QMi" secondAttribute="trailing" id="X6e-eM-Ap3"/>
+                        <constraint firstItem="bWA-zU-QMi" firstAttribute="leading" secondItem="Jb1-4G-M0C" secondAttribute="leading" id="a7F-tB-HRM"/>
+                        <constraint firstItem="n9z-YB-NSA" firstAttribute="top" secondItem="Jb1-4G-M0C" secondAttribute="top" constant="17.5" id="aJY-hr-x4T"/>
+                        <constraint firstItem="gbB-fA-oSq" firstAttribute="centerX" secondItem="Jb1-4G-M0C" secondAttribute="centerX" multiplier="1.4" id="kw7-dd-tVs"/>
+                        <constraint firstItem="n9z-YB-NSA" firstAttribute="height" secondItem="Jb1-4G-M0C" secondAttribute="height" multiplier="0.3" id="lML-Ii-0Lb"/>
+                        <constraint firstItem="dFy-9q-UdI" firstAttribute="centerX" secondItem="Jb1-4G-M0C" secondAttribute="centerX" id="pbL-wb-ySl"/>
+                        <constraint firstItem="PuN-XJ-kAJ" firstAttribute="height" secondItem="Jb1-4G-M0C" secondAttribute="height" multiplier="110/148" id="qZb-hP-TEg"/>
+                        <constraint firstItem="Gb3-4Z-t1n" firstAttribute="centerX" secondItem="Jb1-4G-M0C" secondAttribute="centerX" multiplier="1.9" id="th5-Xg-NlB"/>
+                        <constraint firstItem="Gb3-4Z-t1n" firstAttribute="width" secondItem="Jb1-4G-M0C" secondAttribute="width" multiplier="0.1" id="tjo-Pj-3M7"/>
+                        <constraint firstItem="gbB-fA-oSq" firstAttribute="height" secondItem="TSZ-Op-V1e" secondAttribute="height" id="wX5-6N-Xj2"/>
+                        <constraint firstItem="PuN-XJ-kAJ" firstAttribute="centerY" secondItem="Jb1-4G-M0C" secondAttribute="centerY" multiplier="0.5" id="zPq-Cf-5kI"/>
+                        <constraint firstItem="dFy-9q-UdI" firstAttribute="top" secondItem="bWA-zU-QMi" secondAttribute="bottom" constant="10" id="zWq-ku-cp1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.25406487944162437" green="0.25406487944162437" blue="0.25406487944162437" alpha="0.86884631849315064" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jb1-4G-M0C" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="350/375" id="4Qo-VD-aQZ"/>
+                <constraint firstItem="Jb1-4G-M0C" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="HeH-WR-BIE"/>
+                <constraint firstItem="Jb1-4G-M0C" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Ra4-nL-JyC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <connections>
+                <outlet property="alertImageView" destination="PuN-XJ-kAJ" id="btr-x6-zSu"/>
+                <outlet property="cancelBtn" destination="Gb3-4Z-t1n" id="AaJ-BU-ItX"/>
+                <outlet property="confirmBtn" destination="dFy-9q-UdI" id="343-qt-QQn"/>
+                <outlet property="containerView" destination="Jb1-4G-M0C" id="0Ts-1R-00E"/>
+                <outlet property="messageLabel" destination="bWA-zU-QMi" id="jIx-qh-lLm"/>
+                <outlet property="noBtn" destination="gbB-fA-oSq" id="zBY-zA-Pr7"/>
+                <outlet property="titleLabel" destination="n9z-YB-NSA" id="g7k-dr-KJ2"/>
+                <outlet property="yesBtn" destination="TSZ-Op-V1e" id="AHj-nL-9jh"/>
+            </connections>
+            <point key="canvasLocation" x="37.600000000000001" y="34.632683658170919"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Cancel" width="24" height="24"/>
+    </resources>
+</document>

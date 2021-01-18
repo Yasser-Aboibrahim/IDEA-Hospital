@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PT_Sans_Bold.ttf">
+            <string>PTSans-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="P3W-kK-po9">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="3pj-D4-VnD" customClass="HomeVC" customModule="IDEA_Hospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Dl-Sy-V19" customClass="HomeView" customModule="IDEA_Hospital" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6V6-hQ-RJr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="NwQ-wC-Sgq">
+                                <rect key="frame" x="145" y="129" width="85.5" height="94"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDEA EG HOSPITAL THE BEST CHOICE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ecj-CX-urC">
+                                <rect key="frame" x="17" y="234.5" width="341" height="24"/>
+                                <fontDescription key="fontDescription" name="PTSans-Bold" family="PT Sans" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HfK-Qr-xha">
+                                <rect key="frame" x="24.5" y="290.5" width="326" height="326"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1JD-QC-SgR">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GvG-DA-5vn">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NwQ-wC-Sgq" firstAttribute="centerY" secondItem="6V6-hQ-RJr" secondAttribute="centerY" multiplier="0.528" id="5rg-IE-lEI"/>
+                            <constraint firstItem="NwQ-wC-Sgq" firstAttribute="width" secondItem="6V6-hQ-RJr" secondAttribute="width" multiplier="85.5/375" id="FKZ-X5-ECO"/>
+                            <constraint firstItem="HfK-Qr-xha" firstAttribute="width" secondItem="6V6-hQ-RJr" secondAttribute="width" multiplier="326/375" id="FeK-9H-eqw"/>
+                            <constraint firstItem="HfK-Qr-xha" firstAttribute="height" secondItem="6V6-hQ-RJr" secondAttribute="height" multiplier="326/667" id="K6f-1G-PB1"/>
+                            <constraint firstItem="HfK-Qr-xha" firstAttribute="centerX" secondItem="6V6-hQ-RJr" secondAttribute="centerX" id="MXD-dw-X5j"/>
+                            <constraint firstItem="NwQ-wC-Sgq" firstAttribute="height" secondItem="6V6-hQ-RJr" secondAttribute="height" multiplier="94/667" id="USI-gR-Esy"/>
+                            <constraint firstItem="ecj-CX-urC" firstAttribute="top" secondItem="NwQ-wC-Sgq" secondAttribute="bottom" constant="11.6" id="X08-xr-787"/>
+                            <constraint firstAttribute="top" secondItem="6V6-hQ-RJr" secondAttribute="top" id="YAF-B2-I0h"/>
+                            <constraint firstItem="kWo-kZ-jyv" firstAttribute="trailing" secondItem="6V6-hQ-RJr" secondAttribute="trailing" id="b4P-ll-hhb"/>
+                            <constraint firstItem="HfK-Qr-xha" firstAttribute="top" secondItem="ecj-CX-urC" secondAttribute="bottom" constant="32" id="eRb-30-EG9"/>
+                            <constraint firstItem="ecj-CX-urC" firstAttribute="centerX" secondItem="6V6-hQ-RJr" secondAttribute="centerX" id="gO9-fF-azV"/>
+                            <constraint firstAttribute="bottom" secondItem="6V6-hQ-RJr" secondAttribute="bottom" id="klU-Ac-p6i"/>
+                            <constraint firstItem="NwQ-wC-Sgq" firstAttribute="centerX" secondItem="6V6-hQ-RJr" secondAttribute="centerX" id="lPQ-DG-JMC"/>
+                            <constraint firstItem="6V6-hQ-RJr" firstAttribute="leading" secondItem="kWo-kZ-jyv" secondAttribute="leading" id="p4V-e4-jqB"/>
+                            <constraint firstItem="ecj-CX-urC" firstAttribute="width" secondItem="6V6-hQ-RJr" secondAttribute="width" multiplier="341/375" id="qCh-D1-VUL"/>
+                            <constraint firstItem="ecj-CX-urC" firstAttribute="height" secondItem="6V6-hQ-RJr" secondAttribute="height" multiplier="24/667" id="qvr-TD-sJd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kWo-kZ-jyv"/>
+                        <connections>
+                            <outlet property="backgroundImage" destination="6V6-hQ-RJr" id="PZB-mz-u5j"/>
+                            <outlet property="collectionView" destination="HfK-Qr-xha" id="LGt-aC-GAc"/>
+                            <outlet property="logoImage" destination="NwQ-wC-Sgq" id="uHr-np-afL"/>
+                            <outlet property="logoLabel" destination="ecj-CX-urC" id="1xB-22-KFC"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="XW6-Ce-eqw"/>
+                    <connections>
+                        <outlet property="homeView" destination="7Dl-Sy-V19" id="G2U-gI-MNJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="neQ-wu-vlb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.399999999999999" y="88.605697151424295"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="goB-Kh-tvA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XbU-Ww-gUY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vOH-iS-IeF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vli-Sw-ns6">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="3pj-D4-VnD" kind="relationship" relationship="rootViewController" id="8dZ-5q-xyr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="568-0u-nGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-919.20000000000005" y="89.505247376311857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="171" height="188.5"/>
+    </resources>
+</document>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home NurseVC-->
+        <scene sceneID="eTv-av-wWa">
+            <objects>
+                <viewController storyboardIdentifier="HomeNurseVC" id="UhF-tE-88M" customClass="HomeNurseVC" customModule="IDEA_Hospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J2F-jj-4R1" customClass="HomeNurseView" customModule="IDEA_Hospital" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGV-ip-0kz">
+                                <rect key="frame" x="26.5" y="83" width="322" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p41-1g-oCU" customClass="CustomTextField" customModule="IDEA_Hospital" customModuleProvider="target">
+                                <rect key="frame" x="27" y="193" width="321" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="NIX-Ff-ZuD"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fT7-lA-hj2" customClass="CustomTextField" customModule="IDEA_Hospital" customModuleProvider="target">
+                                <rect key="frame" x="27" y="255" width="321" height="36"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f4I-mY-mwn" customClass="CustomTextField" customModule="IDEA_Hospital" customModuleProvider="target">
+                                <rect key="frame" x="27" y="317" width="321" height="36"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCa-Fk-hb5" customClass="CommonBigButton" customModule="IDEA_Hospital" customModuleProvider="target">
+                                <rect key="frame" x="30" y="512" width="315" height="45"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendRequestButton:" destination="UhF-tE-88M" eventType="touchUpInside" id="lvl-Yc-7Fb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l95-VY-pPG">
+                                <rect key="frame" x="26.5" y="131" width="322" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter Details" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Mc-d5-wU7">
+                                <rect key="frame" x="26.5" y="376" width="322" height="119"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l95-VY-pPG" firstAttribute="height" secondItem="J2F-jj-4R1" secondAttribute="height" multiplier="14/667" id="0nO-Y3-Lcc"/>
+                            <constraint firstItem="fGV-ip-0kz" firstAttribute="centerY" secondItem="DcQ-dc-JSs" secondAttribute="centerY" multiplier="0.3" id="369-61-FNh"/>
+                            <constraint firstItem="fT7-lA-hj2" firstAttribute="height" secondItem="p41-1g-oCU" secondAttribute="height" id="3AQ-E0-b6U"/>
+                            <constraint firstItem="4Mc-d5-wU7" firstAttribute="centerX" secondItem="DcQ-dc-JSs" secondAttribute="centerX" id="3CH-HW-eHi"/>
+                            <constraint firstItem="l95-VY-pPG" firstAttribute="width" secondItem="fGV-ip-0kz" secondAttribute="width" id="5iv-l4-5nm"/>
+                            <constraint firstItem="p41-1g-oCU" firstAttribute="width" secondItem="J2F-jj-4R1" secondAttribute="width" multiplier="321/375" id="9tf-gU-qgX"/>
+                            <constraint firstItem="p41-1g-oCU" firstAttribute="top" secondItem="l95-VY-pPG" secondAttribute="bottom" constant="48" id="BAf-bi-F7p"/>
+                            <constraint firstItem="fGV-ip-0kz" firstAttribute="height" secondItem="J2F-jj-4R1" secondAttribute="height" multiplier="0.06" id="C1F-fY-Fu1"/>
+                            <constraint firstItem="fT7-lA-hj2" firstAttribute="width" secondItem="p41-1g-oCU" secondAttribute="width" id="CT4-1N-cgN"/>
+                            <constraint firstItem="f4I-mY-mwn" firstAttribute="top" secondItem="fT7-lA-hj2" secondAttribute="bottom" constant="26" id="HML-Yd-2iD"/>
+                            <constraint firstItem="f4I-mY-mwn" firstAttribute="height" secondItem="fT7-lA-hj2" secondAttribute="height" id="Hra-yg-18a"/>
+                            <constraint firstItem="MCa-Fk-hb5" firstAttribute="centerX" secondItem="DcQ-dc-JSs" secondAttribute="centerX" id="Hzs-el-Gpp"/>
+                            <constraint firstItem="4Mc-d5-wU7" firstAttribute="width" secondItem="J2F-jj-4R1" secondAttribute="width" multiplier="322/375" id="Q0F-Jq-oW8"/>
+                            <constraint firstItem="f4I-mY-mwn" firstAttribute="width" secondItem="fT7-lA-hj2" secondAttribute="width" id="RYY-Lj-jP7"/>
+                            <constraint firstItem="MCa-Fk-hb5" firstAttribute="width" secondItem="J2F-jj-4R1" secondAttribute="width" multiplier="315/375" id="Rqh-NQ-uAc"/>
+                            <constraint firstItem="fT7-lA-hj2" firstAttribute="centerX" secondItem="p41-1g-oCU" secondAttribute="centerX" id="SWy-YE-r6k"/>
+                            <constraint firstItem="MCa-Fk-hb5" firstAttribute="top" secondItem="4Mc-d5-wU7" secondAttribute="bottom" constant="17" id="Tyj-G2-vY1"/>
+                            <constraint firstItem="l95-VY-pPG" firstAttribute="centerX" secondItem="fGV-ip-0kz" secondAttribute="centerX" id="apW-z5-rGp"/>
+                            <constraint firstItem="fGV-ip-0kz" firstAttribute="width" secondItem="J2F-jj-4R1" secondAttribute="width" multiplier="322/375" id="cOa-cV-nQh"/>
+                            <constraint firstItem="4Mc-d5-wU7" firstAttribute="height" secondItem="J2F-jj-4R1" secondAttribute="height" multiplier="119/667" id="cr6-4f-ll2"/>
+                            <constraint firstItem="4Mc-d5-wU7" firstAttribute="top" secondItem="f4I-mY-mwn" secondAttribute="bottom" constant="23" id="dzL-pp-4Ek"/>
+                            <constraint firstItem="fGV-ip-0kz" firstAttribute="centerX" secondItem="DcQ-dc-JSs" secondAttribute="centerX" id="eH3-ZI-99i"/>
+                            <constraint firstItem="p41-1g-oCU" firstAttribute="centerX" secondItem="DcQ-dc-JSs" secondAttribute="centerX" id="iVf-6v-Ybd"/>
+                            <constraint firstItem="fT7-lA-hj2" firstAttribute="top" secondItem="p41-1g-oCU" secondAttribute="bottom" constant="26" id="o6z-Ji-BdC"/>
+                            <constraint firstItem="f4I-mY-mwn" firstAttribute="centerX" secondItem="fT7-lA-hj2" secondAttribute="centerX" id="vrx-Vi-egp"/>
+                            <constraint firstItem="MCa-Fk-hb5" firstAttribute="height" secondItem="J2F-jj-4R1" secondAttribute="height" multiplier="45/667" id="zbc-uw-ewV"/>
+                            <constraint firstItem="l95-VY-pPG" firstAttribute="top" secondItem="fGV-ip-0kz" secondAttribute="bottom" constant="8" id="zlh-f5-Mgc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DcQ-dc-JSs"/>
+                        <connections>
+                            <outlet property="EmailTextField" destination="fT7-lA-hj2" id="ylC-lA-OwX"/>
+                            <outlet property="contactUsTitleLabel" destination="l95-VY-pPG" id="bwy-fc-sTJ"/>
+                            <outlet property="enterDetailsTextView" destination="4Mc-d5-wU7" id="pMo-Ki-KpX"/>
+                            <outlet property="mobileNumberTextField" destination="f4I-mY-mwn" id="mm1-ng-bxQ"/>
+                            <outlet property="nameTextField" destination="p41-1g-oCU" id="vFQ-RA-xLS"/>
+                            <outlet property="sendRequestButton" destination="MCa-Fk-hb5" id="T4b-de-AYt"/>
+                            <outlet property="titleLabel" destination="fGV-ip-0kz" id="kun-lf-BLW"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="USX-JS-FwQ"/>
+                    <connections>
+                        <outlet property="HomeNurseView" destination="J2F-jj-4R1" id="WDI-NF-KYn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kdq-y3-leg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1387" y="51"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_IDEA_Hospital {
+  umbrella header "Pods-IDEA Hospital-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DoctorReviewsTabelViewCell" id="KGk-i7-Jjw" customClass="DoctorReviewsTabelViewCell" customModule="IDEA_Hospital" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="78"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="77.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhK-rF-K7O">
+                        <rect key="frame" x="29" y="17" width="150" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBL-0g-zl7" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="252" y="17" width="87" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBd-1f-GIM">
+                        <rect key="frame" x="29" y="37" width="310" height="40.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QBL-0g-zl7" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="87/375" id="3N5-FY-Rxp"/>
+                    <constraint firstItem="JhK-rF-K7O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="29" id="3RQ-rl-Pqm"/>
+                    <constraint firstItem="QBL-0g-zl7" firstAttribute="height" secondItem="JhK-rF-K7O" secondAttribute="height" id="43a-Dw-Tyc"/>
+                    <constraint firstItem="bBd-1f-GIM" firstAttribute="leading" secondItem="JhK-rF-K7O" secondAttribute="leading" id="4L6-mD-xz2"/>
+                    <constraint firstItem="QBL-0g-zl7" firstAttribute="centerY" secondItem="JhK-rF-K7O" secondAttribute="centerY" id="7CA-F3-1eG"/>
+                    <constraint firstItem="bBd-1f-GIM" firstAttribute="trailing" secondItem="QBL-0g-zl7" secondAttribute="trailing" id="7en-Hi-sJB"/>
+                    <constraint firstAttribute="bottom" secondItem="bBd-1f-GIM" secondAttribute="bottom" id="DdI-xy-NcA"/>
+                    <constraint firstAttribute="trailing" secondItem="QBL-0g-zl7" secondAttribute="trailing" constant="36" id="g2h-pk-SSw"/>
+                    <constraint firstItem="JhK-rF-K7O" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="150/375" id="jDb-hj-GBd"/>
+                    <constraint firstItem="JhK-rF-K7O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="maL-E0-SbM"/>
+                    <constraint firstItem="bBd-1f-GIM" firstAttribute="top" secondItem="JhK-rF-K7O" secondAttribute="bottom" id="rjv-Xf-dpX"/>
+                    <constraint firstItem="JhK-rF-K7O" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="20/78" id="zSf-Ti-hUo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="reviewerComment" destination="bBd-1f-GIM" id="vnf-rX-Twf"/>
+                <outlet property="reviewerName" destination="JhK-rF-K7O" id="ppe-OG-eib"/>
+                <outlet property="reviewerRating" destination="QBL-0g-zl7" id="e5o-eg-0eT"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="118.52678571428571"/>
+        </tableViewCell>
+    </objects>
+</document>

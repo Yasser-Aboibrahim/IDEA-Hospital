@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (5.0.0)
+  - Cosmos (23.0.0)
+  - EmptyDataSet-Swift (5.0.0)
+  - IQKeyboardManager (6.5.6)
+  - SDWebImage (5.9.0):
+    - SDWebImage/Core (= 5.9.0)
+  - SDWebImage/Core (5.9.0)
+  - SwiftGen (6.4.0)
+
+DEPENDENCIES:
+  - Alamofire (= 5.0.0)
+  - Cosmos (~> 23.0)
+  - EmptyDataSet-Swift (~> 5.0.0)
+  - IQKeyboardManager
+  - SDWebImage (= 5.9.0)
+  - SwiftGen (~> 6.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Cosmos
+    - EmptyDataSet-Swift
+    - IQKeyboardManager
+    - SDWebImage
+    - SwiftGen
+
+SPEC CHECKSUMS:
+  Alamofire: 58ff2bfb8daaacaa233d5c36e37b10a5248f59b1
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  EmptyDataSet-Swift: eb382c0c87a2d9c678077385a595cec52da38171
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  SDWebImage: 62ae4a18473520c67b79e9724c31a63599cc9423
+  SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
+
+PODFILE CHECKSUM: b495f189e88d79a98d3fac0cdfb75f5b12ea403d
+
+COCOAPODS: 1.9.3

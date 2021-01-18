@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My AppointmentsVC-->
+        <scene sceneID="HUo-VE-a4f">
+            <objects>
+                <viewController storyboardIdentifier="MyAppointmentsVC" id="3L8-C7-ysb" customClass="MyAppointmentsVC" customModule="IDEA_Hospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6n2-hx-HPb" customClass="MyAppointmentsView" customModule="IDEA_Hospital" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aw-0U-xuh">
+                                <rect key="frame" x="0.0" y="408" width="414" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pS2-tD-hkV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pS2-tD-hkV" firstAttribute="leading" secondItem="jHh-Je-mbt" secondAttribute="leading" id="6ZU-xc-a32"/>
+                            <constraint firstItem="7aw-0U-xuh" firstAttribute="centerX" secondItem="jHh-Je-mbt" secondAttribute="centerX" id="CKc-Lm-Uqd"/>
+                            <constraint firstItem="7aw-0U-xuh" firstAttribute="width" secondItem="6n2-hx-HPb" secondAttribute="width" id="FXr-zF-8mz"/>
+                            <constraint firstItem="7aw-0U-xuh" firstAttribute="centerY" secondItem="jHh-Je-mbt" secondAttribute="centerY" id="Fyb-jN-427"/>
+                            <constraint firstItem="7aw-0U-xuh" firstAttribute="height" secondItem="6n2-hx-HPb" secondAttribute="height" multiplier="0.1" id="fYL-sN-FCs"/>
+                            <constraint firstItem="jHh-Je-mbt" firstAttribute="bottom" secondItem="pS2-tD-hkV" secondAttribute="bottom" id="lvP-iu-e5v"/>
+                            <constraint firstItem="pS2-tD-hkV" firstAttribute="top" secondItem="jHh-Je-mbt" secondAttribute="top" id="o7u-Qw-VJN"/>
+                            <constraint firstItem="jHh-Je-mbt" firstAttribute="trailing" secondItem="pS2-tD-hkV" secondAttribute="trailing" id="wcd-b0-PBC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jHh-Je-mbt"/>
+                        <connections>
+                            <outlet property="myAppointmentsTableView" destination="pS2-tD-hkV" id="NhQ-c2-fZb"/>
+                            <outlet property="noDataLabel" destination="7aw-0U-xuh" id="Oa5-7L-BIU"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="myAppointmentsView" destination="6n2-hx-HPb" id="Tgm-a1-cJJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0eT-Y4-QM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.507246376811594" y="89.732142857142847"/>
+        </scene>
+    </scenes>
+</document>

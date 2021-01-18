@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit ProfileVC-->
+        <scene sceneID="vr5-gj-ml2">
+            <objects>
+                <viewController storyboardIdentifier="EditProfileVC" id="D3h-an-HMZ" customClass="EditProfileVC" customModule="IDEA_Hospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t43-Fq-gqX" customClass="EditProfileView" customModule="IDEA_Hospital" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CO7-uw-73A" customClass="CustomTextField" customModule="IDEA_Hospital" customModuleProvider="target">
+                                <rect key="frame" x="30" y="208.5" width="354" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="ffK-gP-yYi"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qhf-CR-PZX" customClass="CustomTextField" customModule="IDEA_Hospital" customModuleProvider="target">
+                                <rect key="frame" x="30" y="269.5" width="354" height="36"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bqb-Ri-lNz" customClass="CustomTextField" customModule="IDEA_Hospital" customModuleProvider="target">
+                                <rect key="frame" x="30" y="330.5" width="354" height="36"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FhV-9w-dub" customClass="CustomTextField" customModule="IDEA_Hospital" customModuleProvider="target">
+                                <rect key="frame" x="30" y="391.5" width="354" height="36"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k0f-ye-bP7" customClass="CustomTextField" customModule="IDEA_Hospital" customModuleProvider="target">
+                                <rect key="frame" x="30" y="452.5" width="354" height="36"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qmc-Q2-qKI" customClass="CustomTextField" customModule="IDEA_Hospital" customModuleProvider="target">
+                                <rect key="frame" x="30" y="513.5" width="354" height="36"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMl-sh-PJl" customClass="CommonButton" customModule="IDEA_Hospital" customModuleProvider="target">
+                                <rect key="frame" x="77.5" y="708" width="110" height="33.5"/>
+                                <connections>
+                                    <action selector="saveBtnTapped:" destination="D3h-an-HMZ" eventType="touchUpInside" id="doH-Jk-MV3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ida-lW-1uk" customClass="CommonButton" customModule="IDEA_Hospital" customModuleProvider="target">
+                                <rect key="frame" x="226.5" y="708" width="110" height="33.5"/>
+                                <connections>
+                                    <action selector="cancelBtnTapped:" destination="D3h-an-HMZ" eventType="touchUpInside" id="hjY-cw-QkV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qmc-Q2-qKI" firstAttribute="top" secondItem="k0f-ye-bP7" secondAttribute="bottom" constant="25" id="1Ud-Sc-jV7"/>
+                            <constraint firstItem="Bqb-Ri-lNz" firstAttribute="centerX" secondItem="Qhf-CR-PZX" secondAttribute="centerX" id="1ky-ZZ-s6u"/>
+                            <constraint firstItem="FhV-9w-dub" firstAttribute="centerX" secondItem="Bqb-Ri-lNz" secondAttribute="centerX" id="3fn-v6-9F9"/>
+                            <constraint firstItem="ida-lW-1uk" firstAttribute="centerX" secondItem="A0i-4F-uBO" secondAttribute="centerX" multiplier="1.36" id="4LF-Ds-Thm"/>
+                            <constraint firstItem="k0f-ye-bP7" firstAttribute="height" secondItem="FhV-9w-dub" secondAttribute="height" id="5g3-on-avK"/>
+                            <constraint firstItem="k0f-ye-bP7" firstAttribute="top" secondItem="FhV-9w-dub" secondAttribute="bottom" constant="25" id="7gc-fG-7yx"/>
+                            <constraint firstItem="lMl-sh-PJl" firstAttribute="centerY" secondItem="A0i-4F-uBO" secondAttribute="centerY" multiplier="1.6" id="8YJ-ox-Bbm"/>
+                            <constraint firstItem="Qmc-Q2-qKI" firstAttribute="width" secondItem="k0f-ye-bP7" secondAttribute="width" id="9T0-fF-5HI"/>
+                            <constraint firstItem="FhV-9w-dub" firstAttribute="top" secondItem="Bqb-Ri-lNz" secondAttribute="bottom" constant="25" id="BCc-Jb-IF8"/>
+                            <constraint firstItem="lMl-sh-PJl" firstAttribute="width" secondItem="t43-Fq-gqX" secondAttribute="width" multiplier="100/375" id="C8V-nQ-sPL"/>
+                            <constraint firstItem="FhV-9w-dub" firstAttribute="width" secondItem="Bqb-Ri-lNz" secondAttribute="width" id="Ebm-on-vlg"/>
+                            <constraint firstItem="CO7-uw-73A" firstAttribute="centerX" secondItem="A0i-4F-uBO" secondAttribute="centerX" id="Edj-5W-lSh"/>
+                            <constraint firstItem="Qhf-CR-PZX" firstAttribute="centerX" secondItem="CO7-uw-73A" secondAttribute="centerX" id="HYg-bW-crI"/>
+                            <constraint firstItem="Qhf-CR-PZX" firstAttribute="width" secondItem="CO7-uw-73A" secondAttribute="width" id="KCM-zt-6xQ"/>
+                            <constraint firstItem="k0f-ye-bP7" firstAttribute="width" secondItem="FhV-9w-dub" secondAttribute="width" id="M8S-6p-pV5"/>
+                            <constraint firstItem="ida-lW-1uk" firstAttribute="height" secondItem="lMl-sh-PJl" secondAttribute="height" id="MX1-cM-9Pr"/>
+                            <constraint firstItem="Bqb-Ri-lNz" firstAttribute="width" secondItem="Qhf-CR-PZX" secondAttribute="width" id="Puh-wu-o6F"/>
+                            <constraint firstItem="Qmc-Q2-qKI" firstAttribute="centerX" secondItem="k0f-ye-bP7" secondAttribute="centerX" id="RAE-td-NlS"/>
+                            <constraint firstItem="CO7-uw-73A" firstAttribute="centerY" secondItem="A0i-4F-uBO" secondAttribute="centerY" multiplier="0.5" id="RI2-3N-F4Y"/>
+                            <constraint firstItem="ida-lW-1uk" firstAttribute="width" secondItem="lMl-sh-PJl" secondAttribute="width" id="Tgz-3e-rjD"/>
+                            <constraint firstItem="lMl-sh-PJl" firstAttribute="centerX" secondItem="A0i-4F-uBO" secondAttribute="centerX" multiplier="0.64" id="Ul6-0K-cQu"/>
+                            <constraint firstItem="Qmc-Q2-qKI" firstAttribute="height" secondItem="k0f-ye-bP7" secondAttribute="height" id="ZEt-L6-5fU"/>
+                            <constraint firstItem="Bqb-Ri-lNz" firstAttribute="height" secondItem="Qhf-CR-PZX" secondAttribute="height" id="ZYI-xS-yYx"/>
+                            <constraint firstItem="k0f-ye-bP7" firstAttribute="centerX" secondItem="FhV-9w-dub" secondAttribute="centerX" id="ddu-RH-lQn"/>
+                            <constraint firstItem="lMl-sh-PJl" firstAttribute="height" secondItem="t43-Fq-gqX" secondAttribute="height" multiplier="25/667" id="edB-qy-Knm"/>
+                            <constraint firstItem="CO7-uw-73A" firstAttribute="width" secondItem="t43-Fq-gqX" secondAttribute="width" multiplier="321/375" id="iBm-75-KtX"/>
+                            <constraint firstItem="Qhf-CR-PZX" firstAttribute="top" secondItem="CO7-uw-73A" secondAttribute="bottom" constant="25" id="kJq-go-ZfP"/>
+                            <constraint firstItem="Bqb-Ri-lNz" firstAttribute="top" secondItem="Qhf-CR-PZX" secondAttribute="bottom" constant="25" id="qZb-jP-GHJ"/>
+                            <constraint firstItem="FhV-9w-dub" firstAttribute="height" secondItem="Bqb-Ri-lNz" secondAttribute="height" id="skA-kf-FNL"/>
+                            <constraint firstItem="ida-lW-1uk" firstAttribute="centerY" secondItem="lMl-sh-PJl" secondAttribute="centerY" id="stO-7b-7L9"/>
+                            <constraint firstItem="Qhf-CR-PZX" firstAttribute="height" secondItem="CO7-uw-73A" secondAttribute="height" id="wYi-Fn-kt3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="A0i-4F-uBO"/>
+                        <connections>
+                            <outlet property="cancelBtn" destination="ida-lW-1uk" id="6Ob-aL-OiC"/>
+                            <outlet property="confirmPasswordTextField" destination="Qmc-Q2-qKI" id="p1S-6E-qrW"/>
+                            <outlet property="emailTextField" destination="Qhf-CR-PZX" id="TG8-qM-BJZ"/>
+                            <outlet property="mobileTextField" destination="Bqb-Ri-lNz" id="7B3-wq-Dx0"/>
+                            <outlet property="nameTextField" destination="CO7-uw-73A" id="OdP-WH-1vk"/>
+                            <outlet property="newPasswordTextField" destination="k0f-ye-bP7" id="EIW-Vb-0Ei"/>
+                            <outlet property="oldPasswordTextField" destination="FhV-9w-dub" id="Bh7-qS-bcB"/>
+                            <outlet property="saveBtn" destination="lMl-sh-PJl" id="6XZ-cU-zex"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="editProfileView" destination="t43-Fq-gqX" id="vZo-ZE-aSi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gy4-LQ-tge" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3" y="86"/>
+        </scene>
+    </scenes>
+</document>

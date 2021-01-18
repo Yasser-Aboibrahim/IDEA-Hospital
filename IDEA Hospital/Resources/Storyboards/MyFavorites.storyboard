@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My FavoritesVC-->
+        <scene sceneID="OsS-XV-reB">
+            <objects>
+                <viewController storyboardIdentifier="MyFavoritesVC" id="U3V-Gh-YC0" customClass="MyFavoritesVC" customModule="IDEA_Hospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="MyFavoritesView" id="lxv-5w-I9Z" customClass="MyFavoritesView" customModule="IDEA_Hospital" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgz-Ri-8zf">
+                                <rect key="frame" x="0.0" y="408" width="414" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ErC-S6-zNg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ErC-S6-zNg" firstAttribute="width" secondItem="Ir5-dk-btA" secondAttribute="width" id="1FY-Tp-i8B"/>
+                            <constraint firstItem="Hgz-Ri-8zf" firstAttribute="centerY" secondItem="Ir5-dk-btA" secondAttribute="centerY" id="3PG-E3-xcf"/>
+                            <constraint firstItem="ErC-S6-zNg" firstAttribute="centerX" secondItem="Ir5-dk-btA" secondAttribute="centerX" id="Be3-xe-4ra"/>
+                            <constraint firstItem="ErC-S6-zNg" firstAttribute="centerY" secondItem="Ir5-dk-btA" secondAttribute="centerY" id="Vws-wB-icc"/>
+                            <constraint firstItem="Hgz-Ri-8zf" firstAttribute="width" secondItem="lxv-5w-I9Z" secondAttribute="width" id="fq5-WH-Dd5"/>
+                            <constraint firstItem="ErC-S6-zNg" firstAttribute="height" secondItem="Ir5-dk-btA" secondAttribute="height" id="h4O-Fa-bLx"/>
+                            <constraint firstItem="Hgz-Ri-8zf" firstAttribute="height" secondItem="lxv-5w-I9Z" secondAttribute="height" multiplier="0.1" id="rgY-rf-zDK"/>
+                            <constraint firstItem="Hgz-Ri-8zf" firstAttribute="centerX" secondItem="Ir5-dk-btA" secondAttribute="centerX" id="zHZ-uq-eJs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ir5-dk-btA"/>
+                        <connections>
+                            <outlet property="myFavoritesTableView" destination="ErC-S6-zNg" id="ucd-9J-rcZ"/>
+                            <outlet property="noFavoritesData" destination="Hgz-Ri-8zf" id="NTZ-8C-q0h"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="myFavoritesview" destination="lxv-5w-I9Z" id="ISC-qb-n14"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vqZ-yv-6Un" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-233.33333333333334" y="156.69642857142856"/>
+        </scene>
+    </scenes>
+</document>
